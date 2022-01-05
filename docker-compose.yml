@@ -1,0 +1,21 @@
+version: '3'
+services:
+    php:
+        build: php-fpm
+        volumes:
+            - ./www/:/var/www/html/
+    web:
+        build: nginx
+        ports:
+            - '8083:80'
+        links:
+            - php
+        volumes_from:
+            - php
+        volumes:
+            - ./logs/nginx/:/var/log/nginx:cached
+            - ./nginx/config:/etc/nginx/conf.d/
+networks:
+  default:
+    external:
+      name: my-network

@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\OperationsTest::testIndex":3,"App\\Tests\\OperationsTest::testDivZero":3},"times":{"App\\Tests\\OperationsTest::testIndex":0.21,"App\\Tests\\OperationsTest::testAdd":0.193,"App\\Tests\\OperationsTest::testDiv":0.006,"App\\Tests\\OperationsTest::testDivZero":0.006}}
