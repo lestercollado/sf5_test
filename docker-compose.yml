@@ -18,4 +18,4 @@ services:
 networks:
   default:
     external:
-      name: my-network
+      name: network-sf
